@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.wrap .container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.wrap .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.wrap .header h1 img {
+  height: 40px;
+}
+
+.wrap .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .header .menu .menuLink {
+  margin-right: 60px;
+}
+
+.wrap .header .menu .menuLink a {
+  font-family: "PingFang TC", Semibold;
+  color: #3F5D45;
+}
+
+.wrap .header .menu .shoppingCart {
+  margin-left: 19px;
+}
+
+.wrap .banner {
+  margin-bottom: 60px;
+}
+
+.wrap .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .catogory h2 {
+  width: 300px;
+  height: 65px;
+  font-size: 24px;
+  font-family: "PingFang TC", Semibold;
+  background: #3F5D45;
+  color: #EAF0ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .catogory a {
+  width: 300px;
+  height: 65px;
+  font-size: 24px;
+  font-family: "PingFang TC", Semibold;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .catogory a:hover {
+  background: #EAF0ED;
+}
+
+.wrap .main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .content .productList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap .main .content .productList li {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.wrap .main .content .productList li .product {
+  width: 300px;
+  height: 315px;
+  position: relative;
+}
+
+.wrap .main .content .productList li .product .today {
+  width: 36px;
+  height: 106.73px;
+  font-family: "PingFang TC", Semibold;
+  background: #3F5D45;
+  color: #EAF0ED;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.wrap .main .content .productList li .product .heart {
+  width: 22px;
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+.wrap .main .content .productList li .foodItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .main .content .productList li .foodItem .productName {
+  font-size: 20px;
+  font-family: "PingFang TC, Light";
+  color: #3F5D45;
+  width: 173px;
+  border-top: 1px solid #EAF0ED;
+  border-left: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
+  padding: 14px 33px;
+}
+
+.wrap .main .content .productList li .foodItem .price {
+  font-size: 20px;
+  font-family: "PingFang TC", Semibold;
+  color: #3F5D45;
+  width: 127px;
+  border: 1px solid #EAF0ED;
+  padding: 14px 20px 14px 23px;
+}
+
+.wrap .main .content .productList li .addCart {
+  font-size: 24px;
+  font-family: "PingFang TC", Semibold;
+  color: #3F5D45;
+  width: 300px;
+  height: 65px;
+  background: #EAF0ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .content .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.wrap .main .content .pagination a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-family: "PingFang TC", Semibold;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+
+.wrap .main .content .pagination a:hover {
+  color: #EAF0ED;
+  background: #3F5D45;
+}
+
+.wrap .main .content .pagination a img {
+  padding: 30px;
+}
+
+.wrap .main .content .pagination a img:hover {
+  -webkit-filter: brightness(90);
+          filter: brightness(90);
+}
+/*# sourceMappingURL=all.css.map */
